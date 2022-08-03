@@ -4,7 +4,7 @@ import { getInfo } from "ytdl-core";
 
 export const downloadVideo = Router();
 
-downloadVideo.get('/', async (req: Request, res: Response) => {
+downloadVideo.get('', async (req: Request, res: Response) => {
   const video_url = req!.query!.url as string
   const video_id_formatted = video_url.split('v=')[1]
 
