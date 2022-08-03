@@ -1,14 +1,14 @@
 {
   "name": "download_video_from_youtube",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.ts",
   "author": "Daniel Barros",
   "license": "MIT",
   "private": false,
   "scripts": {
     "dev": "ts-node-dev --transpile-only --respawn src/server.ts",
     "build": "tsc",
-    "start": "node build/index.js"
+    "start": "node public/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
