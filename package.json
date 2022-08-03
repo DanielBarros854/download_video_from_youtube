@@ -16,6 +16,9 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "ytdl-core": "^4.11.0"
   }
 }
