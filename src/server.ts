@@ -3,8 +3,9 @@ import { downloadVideo, home } from './routes'
 
 const app = express()
 
-app.use(express.static(__dirname + '../views'));
-app.set("view engine", "ejs");
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+app.set('views', __dirname);
 app.use(express.json())
 
 app.use('', home)
