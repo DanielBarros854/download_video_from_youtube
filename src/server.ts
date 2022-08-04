@@ -1,11 +1,12 @@
-import express, { Router } from 'express'
+import express from 'express'
+import { join } from 'path';
 import { downloadVideo, home } from './routes'
 
 const app = express()
 
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
-app.set('views', __dirname);
+app.use(express.static(join(__dirname, 'public')))
+app.set('views', join(__dirname, 'views'))
+app.set('view engine', 'ejs')
 app.use(express.json())
 
 app.use('', home)
