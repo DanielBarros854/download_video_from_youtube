@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Router } from 'express'
 import { downloadVideo, home } from './routes'
 
 const app = express()
